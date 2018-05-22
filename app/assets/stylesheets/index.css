@@ -1,0 +1,430 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  width: auto;
+  margin: auto;
+  padding: 0;
+
+}
+
+.filler {
+  flex: 1 1 auto;
+}
+
+svg {
+  box-sizing: border-box;
+  height: 20em;
+  width: 10em;
+  padding: 1.5em;
+  margin: 50px;
+  overflow: visible;
+}
+
+g {
+  fill: transparent;
+}
+
+.path {
+  stroke-dasharray: 1012;
+  stroke-dashoffset: -1012;
+  animation: dash 1.6s linear forwards;
+  animation-delay: .1s;
+  transition: .2s ease-in-out all;
+}
+
+.hero_section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  width: auto;
+  height: 100vh;
+  margin: -60px -20px 0 -20px;
+  background-color: transparent;
+}
+
+.hero_text {
+  margin: 80px;
+}
+
+.button {
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  width: 200px;
+  height: 38px;
+  padding: 13px 35px;
+  margin-right: 10px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: white
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #3a3a3a;
+  transition: .2s ease-in-out;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.black {
+  border-color: black;
+}
+
+.black a {
+  color: black;
+}
+
+.black:hover {
+  background-color: black;
+  transition: .2s ease-in-out;
+}
+
+.black:hover a {
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 100vh;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.section div {
+  margin: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 10px;
+}
+
+h1 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 4em;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7em;
+  margin-bottom: 45px !important;
+  font-weight: lighter;
+}
+
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .8em;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.row {
+  display: grid;
+  height: 60vh;
+  width: 100%;
+  grid-template: 1fr / 1fr 1fr;
+}
+
+.add-row {
+  grid-template: 1fr  1fr / 1fr 1fr;
+  margin: 300px auto;
+}
+
+.inner-row {
+  display: grid;
+  height: 300px;
+  width: 85%;
+  margin: auto;
+  grid-template: 1fr / 1fr 1fr;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  z-index: -1;
+  margin-top: -40px;
+  position: relative;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  z-index: -1
+}
+
+.col-left {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.col-right {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.col-span {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.footer {
+  bottom: 0;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 856px) {
+  .section, .group {
+    grid-column: 1 / 3 !important;
+  }
+
+  .text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section div {
+    margin: 15px;
+  }
+
+  .hero_section {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_text {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 2.45em;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .nav #icon:not(.click-icon):hover > span:nth-child(2) {
+	  transform: scaleX(1) !important;
+  }
+
+  .side {
+    display: none !important;
+  }
+
+  .row {
+    grid-template-areas: 1fr 1fr / 1fr;
+    margin: 100px 0 !important;
+    height: 100% !important;
+  }
+
+	.section {
+		grid-row: 1 / 2;
+	}
+
+  .project_text {
+    margin: 0;
+    position: relative;
+    width: 100% !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  .project_desc {
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .project_img {
+    width: 90% !important;
+    height: 350px !important;
+    margin-bottom: -150px !important;
+  }
+
+  .inner-row {
+    margin: 0;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+@keyframes Bounce {
+	0% {
+    transform: translateY(0);
+	}
+
+	10% {
+    transform: translateY(-5px);
+	}
+
+	20%, 100% {
+    transform: translateY(0);
+	}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.bounceOutUp {
+  animation-name: bounceOutUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}

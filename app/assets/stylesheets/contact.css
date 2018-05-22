@@ -1,0 +1,166 @@
+.sub_page {
+	justify-content: center;
+	text-align: center;
+}
+
+.sub_title {
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom-left-radius: 10% 10%;
+	border-bottom-right-radius: 10% 10%;
+	border-top-left-radius: 10% 10%;
+	border-top-right-radius: 10% 10%;
+	padding: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+form > h2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1em;
+    font-family: "Josefin Sans", sans-serif;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > fieldset {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+form > fieldset > input[type="text"],
+form > fieldset > input[type="email"],
+form > fieldset > input[type="password"],
+form > fieldset > textarea {
+    width: 100%;
+    outline: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: auto auto 25px auto;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 0.85;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: all .2s ease-out;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: .85em;
+    color: white;
+    resize: none;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, .998);
+  color: black;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.998);
+  color: black;
+}
+
+form > fieldset > input[type="text"]:focus,
+form > fieldset > input[type="email"]:focus,
+form > fieldset > input[type="password"]:focus,
+form > fieldset > textarea:focus {
+    outline: 0;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid white;
+    transition: all .2s ease-out;
+    opacity: 1;
+}
+
+form > fieldset > textarea {
+  height: 150px;
+}
+
+/* form > fieldset > input[type="text"]:valid,
+form > fieldset > input[type="email"]:valid,
+form > fieldset > input[type="password"]:valid {
+    border: 2px solid #4CAF50;
+    transition: all .2s ease-out;
+} */
+
+form > fieldset > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+form > fieldset > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+form > fieldset > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #F44336;
+    transition: all .2s ease-out;
+}
+
+form > fieldset > input[type="text"]:invalid:focus:not(:placeholder-shown),
+form > fieldset > input[type="email"]:invalid:focus:not(:placeholder-shown),
+form > fieldset > input[type="password"]:invalid:focus:not(:placeholder-shown) {
+    border: 2px solid #F44336;
+    transition: all .2s ease-out;
+}
+
+form button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .85em;
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  padding: 0;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  color: white;
+  align-self: center;
+  opacity: .85;
+}
+
+form button:hover {
+  background-color: #fff;
+  transition: .2s ease-in-out;
+  color: black;
+  opacity: 1;
+}
+
+.section {
+  width: 100%;
+}
+
+* {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+.row {
+	margin: 0 !important;
+}

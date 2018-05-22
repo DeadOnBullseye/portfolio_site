@@ -1,0 +1,65 @@
+
+<% title "Contact" %>
+<% meta_tag :description, "I am a Front-End Web Developer base in Spanish Fork Utah. Contact me if you are interested in a custom site." %>
+<% meta_tag :keywords, "griffin bunnell, portfolio, portfolio site, griffin bunnells portfolio site, web freelancing, griffin bunnell home" %>
+
+<%= stylesheet_link_tag 'contact', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<body style="background: linear-gradient(to bottom, rgba(13,226,223,1) 0%, rgba(32,124,229,1) 25%, rgba(106,0,255,1) 100%)">
+
+  <div class="side">
+
+    <a href="#top"></a>
+    <a href="#1"></a>
+
+  </div>
+
+  <%= render :partial => "pages/navbar" %>
+
+  <div class="hero_section sub_page" id="top">
+
+    <div class="hero_text">
+      <h1 class="sub_title">Contact</h1>
+    </div>
+
+  </div>
+
+<div class="content">
+
+  <div class="section" id="1">
+
+      <form id="gform" method="POST" data-email="deadonbullseye@gmail.com"
+      action="https://script.google.com/macros/s/AKfycbyhylQg6AJRnH2an-MWrIYUGx6wZNLGu_8EUK4cnWoLWfH_Bl4z/exec">
+
+        <h2 style="align-self: center;">Contact Me</h2>
+
+        <fieldset>
+          <input id="name" type="text" name="name" value="" required placeholder="Name" />
+        </fieldset>
+
+        <fieldset>
+          <input id="email" name="email" type="email" value="" required placeholder="Email"/>
+        </fieldset>
+
+        <fieldset>
+          <input id="phone" name="phone" type="text" value="" required placeholder="Phone Number"/>
+        </fieldset>
+
+        <fieldset>
+          <textarea id="message" name="message" value="" required placeholder="Message"></textarea>
+        </fieldset>
+
+        <button>Send</button>
+
+      </form>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div><h6>Copyright &copy; 2018</h6></div>
+</div>
+
+<%= javascript_include_tag 'submission', 'data-turbolinks-track': 'reload'%>
+
+</body>

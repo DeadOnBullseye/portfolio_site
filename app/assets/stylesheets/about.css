@@ -1,0 +1,14 @@
+.sub_page {
+	justify-content: center;
+	text-align: center;
+}
+
+.sub_title {
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom-left-radius: 10% 10%;
+	border-bottom-right-radius: 10% 10%;
+	border-top-left-radius: 10% 10%;
+	border-top-right-radius: 10% 10%;
+	padding: 20px;
+}

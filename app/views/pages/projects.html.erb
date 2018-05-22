@@ -1,0 +1,111 @@
+
+<% title "Projects" %>
+<% meta_tag :description, "I am a Front-End Web Developer base in Spanish Fork Utah. Contact me if you are interested in a custom site." %>
+<% meta_tag :keywords, "griffin bunnell, portfolio, portfolio site, griffin bunnells portfolio site, web freelancing, griffin bunnell home" %>
+
+<%= stylesheet_link_tag 'projects', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<body style="background: linear-gradient(to bottom, rgba(13,226,223,1) 0%, rgba(32,124,229,1) 25%, rgba(106,0,255,1) 100%)">
+
+  <div class="side">
+
+    <a href="#top"></a>
+    <a href="#1"></a>
+    <a href="#2"></a>
+    <a href="#3"></a>
+    <a href="#4"></a>
+    <a href="#5"></a>
+
+  </div>
+
+  <%= render :partial => "pages/navbar" %>
+
+  <div class="hero_section sub_page" id="top">
+
+    <div class="hero_text">
+      <h1 class="sub_title">Projects</h1>
+    </div>
+
+  </div>
+
+<div class="content">
+
+  <div class="row add-row" id="1">
+    <div class="section col-span">
+      <div class="project_img" data-pic="url(<%= asset_path 'Dope-poster_2-min.jpg' %>)" id="pro_1"></div>
+    </div>
+    <div class="inner-row">
+      <div class="project_desc col-right pro_right">
+        <div class="project_text">
+          <h2>DOPE Pic</h2>
+          <h4>This was a small project for my Graphic Design class in high school. We were asked to follow the HOPE poster from the Obama campaign. I had just taken a picture in my suit for prom, and thought it would make a funny poster.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row add-row" id="2">
+    <div class="section col-span">
+      <div class="project_img" data-pic="url(<%= asset_path 'Reset_2-min.jpg' %>)" id="pro_2"></div>
+    </div>
+    <div class="inner-row">
+      <div class="project_desc col-left pro_left">
+        <div class="project_text">
+          <h2>Reset Movie Poster</h2>
+          <h4>This was a project for my high school Graphic Design class. We were asked to come up with a movie idea and then make a poster for it. The idea for the movie was a post-apocalyptic genre where there was a mass genocide, or reset.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row add-row" id="3">
+    <div class="section col-span">
+      <div class="project_img" data-pic="url(<%= asset_path 'downfall_2-min.jpg' %>)" id="pro_3"></div>
+    </div>
+    <div class="inner-row">
+      <div class="project_desc col-right pro_right">
+        <div class="project_text">
+          <h2>Down Fall Movie Poster</h2>
+          <h4>This was a project for my high school Graphic Design class. We were asked to come up with a movie idea and make a movie poster for it. The idea for this movie was just a simple spy genre movie.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row add-row" id="4">
+    <div class="section col-span">
+      <div class="project_img" data-pic="url(<%= asset_path 'blog_2-min.jpg' %>)" id="pro_4"></div>
+    </div>
+    <div class="inner-row">
+      <div class="project_desc col-left pro_left">
+        <div class="project_text">
+          <h2>Blog Site</h2>
+          <h4>This was a project for my high school Web Development class. We were asked to make a blog site and style it.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row add-row" id="5" style="margin-bottom: 60px;">
+    <div class="section col-span">
+      <div class="project_img" data-pic="url(<%= asset_path 'robotics_site_2-min.jpg' %>)" id="pro_5"></div>
+    </div>
+    <div class="inner-row">
+      <div class="project_desc col-right pro_right">
+        <div class="project_text">
+          <h2>Robotics Team Site</h2>
+          <h4>This was a project for the Nebo School District Robotics team. They need a site, and I got to work. I used Particle.js to add some sci-fi flare, and overall it turned out well.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div><h6>Copyright &copy; 2018</h6></div>
+</div>
+
+<%= javascript_include_tag 'projects', 'data-turbolinks-track': 'reload'%>
+
+</body>

@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>PortfolioSite</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      <%= if content_for?(:title) then yield(:title) + ' | ' end %>
+      Griffin Bunnell's Portfolio Site
+    </title>
+
+    <meta name='description' content='<%= yield_meta_tag(:description, 'Default description') %>' />
+    <meta name='keywords' content='<%= yield_meta_tag(:keywords, 'defaults,ruby,rails') %>' />
+
+    <%= stylesheet_link_tag 'index', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'nav', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One" rel="stylesheet">
   </head>
 
   <body>
     <%= yield %>
   </body>
+  <%= javascript_include_tag 'jquery', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload'%>
 </html>

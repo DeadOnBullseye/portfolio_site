@@ -1,0 +1,129 @@
+.sub_page {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+}
+
+.sub_title {
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom-left-radius: 10% 10%;
+	border-bottom-right-radius: 10% 10%;
+	border-top-left-radius: 10% 10%;
+	border-top-right-radius: 10% 10%;
+	padding: 20px;
+}
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+svg {
+  width: 140px;
+  height: 140px;
+	align-self: center;
+	justify-self: center;
+}
+
+svg circle {
+  stroke-width: 10;
+  fill: transparent;
+}
+
+.progress-ring {
+
+}
+
+.progress-ring__circle {
+  -webkit-transition: .5s stroke-dashoffset;
+  -o-transition: .5s stroke-dashoffset;
+  transition: .5s stroke-dashoffset;
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  position: absolute;
+  z-index: 50;
+  stroke-dashoffset: 326;
+}
+
+.percent {
+  position: absolute;
+	align-self: center;
+	justify-self: center;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+	align-self: center;
+	justify-self: center;
+	width: 100%;
+	height: 100%;
+}
+
+.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+	align-items: center;
+	justify-content: center;
+  margin: 15px;
+  padding: 70px 20px;
+	width: 150px;
+	height: 200px;
+	align-self: center;
+	justify-self: center;
+  background-color: rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+          box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.label {
+  margin-top: 20px;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 856px) {
+	.skills_section {
+		flex-direction: column !important;
+		height: 100% !important;
+	}
+
+	.group {
+		width: 200px;
+	}
+}

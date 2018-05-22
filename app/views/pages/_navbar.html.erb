@@ -1,0 +1,20 @@
+  <div class="header">
+
+    <div class="nav">
+      <div class="filler"></div>
+      <div id="icon" onclick="addClickHam()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="side-nav">
+      <a href="/home" class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'home' %>" onclick="addClickHam()">Home</a>
+      <a href="/about" class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'about' %>" onclick="addClickHam()">About</a>
+      <a href="/skills" class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'skills' %>" onclick="addClickHam()">Skills</a>
+      <a href="/projects" class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'projects' %>" onclick="addClickHam()">Projects</a>
+      <a href="/contact" class="<%= 'active' if params[:controller] == 'pages' && params[:action] == 'contact' %>" onclick="addClickHam()">Contact</a>
+    </div>
+
+  </div>

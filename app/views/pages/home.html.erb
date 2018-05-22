@@ -1,0 +1,83 @@
+
+<% title "Home" %>
+<% meta_tag :description, "I am a Front-End Web Developer base in Spanish Fork Utah. Contact me if you are interested in a custom site." %>
+<% meta_tag :keywords, "griffin bunnell, portfolio, portfolio site, griffin bunnells portfolio site, web freelancing, griffin bunnell home" %>
+
+<%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One" rel="stylesheet">
+
+<body style="background: linear-gradient(to bottom, rgba(88,122,190,1) 0%, rgba(224,24,35,1) 20%, rgba(255, 183, 119, 1) 100%);">
+
+  <div class="side">
+
+    <a href="#top"></a>
+    <a href="#1"></a>
+    <a href="#2"></a>
+    <a href="#3"></a>
+    <a href="#4"></a>
+
+  </div>
+
+  <%= render :partial => "pages/navbar" %>
+
+  <div class="hero_section" id="top">
+
+    <div class="hero_text">
+      <h1 style="margin-bottom: 25px;">Griffin Bunnell</h1>
+      <h3 style="margin-bottom: 25px;">Welcome to my Portfolio!</h3>
+      <a href="/contact" class="button">Learn More</a>
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <div class="row" id="1">
+      <div class="section col-left">
+        <div class="text left">
+          <h2>About Me</h2>
+          <h4>Just a little bit about me.
+            And also a little warning:
+            This is gonna get lit.</h4>
+          <a href="/about" class="button circle">></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="2">
+      <div class="section col-right">
+        <div class="text right">
+          <h2>My Skills</h2>
+          <h4>A page outlining my skills and how well I know each one. You can't handle this.</h4>
+          <a href="/skills" class="button circle"><</a>
+            </div>
+        </div>
+    </div>
+
+      <div class="row" id="3">
+        <div class="section col-left">
+          <div class="text left">
+            <h2>My Projects</h2>
+            <h4>A page demonstrating my skills through past projects. Prepare yourself.</h4>
+            <a href="/projects" class="button circle">></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="4">
+        <div class="section col-right">
+          <div class="text right">
+            <h2>Contact Me</h2>
+            <h4>You want a custom website? Contact me. To shy huh? Do it, you won't.</h4>
+            <a href="/contact" class="button circle"><</a>
+              </div>
+          </div>
+      </div>
+
+      </div>
+
+      <div class="footer">
+        <div><h6>Copyright &copy; 2018</h6></div>
+      </div>
+      </body>
